@@ -58,7 +58,7 @@
     const axios = require('axios').default;
 
     export default {
-        name: '수혜기관AssociationInfoPicker',
+        name: 'AssociationAssociationInfoPicker',
         props: {
             value: [String, Object, Array, Number, Boolean],
         },

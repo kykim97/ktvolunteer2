@@ -65,7 +65,7 @@ services:
       - ./volunteering:/usr/src
       - ./maven-repo:/root/.m2
       
-  수혜기관:
+  association:
     depends_on: 
       - kafka
     image: adoptopenjdk/maven-openjdk11:latest
@@ -76,7 +76,7 @@ services:
       - 0:0
     working_dir: /usr/src
     volumes:
-      - ./수혜기관:/usr/src
+      - ./association:/usr/src
       - ./maven-repo:/root/.m2
       
   mypage:

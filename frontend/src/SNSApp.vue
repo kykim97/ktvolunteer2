@@ -82,7 +82,7 @@
                     <v-list-item
                         class="px-2"
                         key="associationInfos"
-                        to="/수혜기관/associationInfos"
+                        to="/associations/associationInfos"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
@@ -189,7 +189,7 @@ export default {
                 title: '수혜기관정보', 
                 description: 'AssociationInfo을 관리하는 화면입니다.', 
                 key: 'associationInfos', 
-                route: '/수혜기관/associationInfos',
+                route: '/associations/associationInfos',
                 ImageUrl: '',
             },
             { 
