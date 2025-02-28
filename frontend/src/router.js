@@ -18,11 +18,11 @@ import VolunteeringVolunteeringDetail from "./components/listers/VolunteeringVol
 
 import CheckVolunteeringApplicationHistoryView from "./components/CheckVolunteeringApplicationHistoryView"
 import CheckVolunteeringApplicationHistoryViewDetail from "./components/CheckVolunteeringApplicationHistoryViewDetail"
-import 수혜기관AssociationInfoManager from "./components/listers/수혜기관AssociationInfoCards"
-import 수혜기관AssociationInfoDetail from "./components/listers/수혜기관AssociationInfoDetail"
+import AssociationAssociationInfoManager from "./components/listers/AssociationAssociationInfoCards"
+import AssociationAssociationInfoDetail from "./components/listers/AssociationAssociationInfoDetail"
 
-import 봉사활동일정조회View from "./components/봉사활동일정조회View"
-import 봉사활동일정조회ViewDetail from "./components/봉사활동일정조회ViewDetail"
+import CheckScheduleView from "./components/CheckScheduleView"
+import CheckScheduleViewDetail from "./components/CheckScheduleViewDetail"
 
 import VolunteerhistoryView from "./components/VolunteerhistoryView"
 import VolunteerhistoryViewDetail from "./components/VolunteerhistoryViewDetail"
@@ -85,25 +85,25 @@ export default new Router({
                 component: CheckVolunteeringApplicationHistoryViewDetail
             },
             {
-                path: '/수혜기관/associationInfos',
-                name: '수혜기관AssociationInfoManager',
-                component: 수혜기관AssociationInfoManager
+                path: '/associations/associationInfos',
+                name: 'AssociationAssociationInfoManager',
+                component: AssociationAssociationInfoManager
             },
             {
-                path: '/수혜기관/associationInfos/:id',
-                name: '수혜기관AssociationInfoDetail',
-                component: 수혜기관AssociationInfoDetail
+                path: '/associations/associationInfos/:id',
+                name: 'AssociationAssociationInfoDetail',
+                component: AssociationAssociationInfoDetail
             },
 
             {
-                path: '/수혜기관/봉사활동일정조회',
-                name: '봉사활동일정조회View',
-                component: 봉사활동일정조회View
+                path: '/associations/checkSchedules',
+                name: 'CheckScheduleView',
+                component: CheckScheduleView
             },
             {
-                path: '/수혜기관/봉사활동일정조회/:id',
-                name: '봉사활동일정조회ViewDetail',
-                component: 봉사활동일정조회ViewDetail
+                path: '/associations/checkSchedules/:id',
+                name: 'CheckScheduleViewDetail',
+                component: CheckScheduleViewDetail
             },
 
             {

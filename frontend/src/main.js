@@ -52,7 +52,7 @@ pluralCaseList.push( {plural: "/", pascal: ""} )
 
 pluralCaseList.push( {plural: "volunteerings/volunteerings", pascal: "VolunteeringVolunteering"} )
 
-pluralCaseList.push( {plural: "수혜기관/associationInfos", pascal: "수혜기관AssociationInfo"} )
+pluralCaseList.push( {plural: "associations/associationInfos", pascal: "AssociationAssociationInfo"} )
 
 
 

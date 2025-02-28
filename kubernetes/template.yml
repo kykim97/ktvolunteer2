@@ -123,22 +123,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: 수혜기관
+  name: association
   labels:
-    app: 수혜기관
+    app: association
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: 수혜기관
+      app: association
   template:
     metadata:
       labels:
-        app: 수혜기관
+        app: association
     spec:
       containers:
-        - name: 수혜기관
-          image: username/수혜기관:latest
+        - name: association
+          image: username/association:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -256,15 +256,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: 수혜기관
+  name: association
   labels:
-    app: 수혜기관
+    app: association
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: 수혜기관
+    app: association
 
 
 ---

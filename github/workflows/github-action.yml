@@ -32,7 +32,7 @@ jobs:
           mvn clean package -f ./volunteer/pom.xml
           mvn clean package -f ./matching/pom.xml
           mvn clean package -f ./volunteering/pom.xml
-          mvn clean package -f ./수혜기관/pom.xml
+          mvn clean package -f ./association/pom.xml
           mvn clean package -f ./mypage/pom.xml
 
       - name: Docker Build and push for Volunteer
@@ -65,15 +65,15 @@ jobs:
             ghcr.io/${{ github.repository }}/volunteering:latest
             ghcr.io/${{ github.repository }}/volunteering:${{ github.ref_name }}
             
-      - name: Docker Build and push for 수혜기관
+      - name: Docker Build and push for Association
         uses: docker/build-push-action@v4
         with:
-          context: ./수혜기관
+          context: ./association
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/수혜기관:latest
-            ghcr.io/${{ github.repository }}/수혜기관:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}/association:latest
+            ghcr.io/${{ github.repository }}/association:${{ github.ref_name }}
             
       - name: Docker Build and push for Mypage
         uses: docker/build-push-action@v4

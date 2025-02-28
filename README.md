@@ -23,7 +23,7 @@ See the README.md files inside the each microservices directory:
 - volunteer
 - matching
 - volunteering
-- 수혜기관
+- association
 - mypage
 
 
@@ -47,7 +47,7 @@ mvn spring-boot:run
 ```
  http :8088/volunteerings volunteeringId="volunteeringId"schedule="schedule"title="title"category="category"personnel="personnel"
 ```
-- 수혜기관
+- association
 ```
  http :8088/associationInfos associationId="associationId"tel="tel"bizNumber="bizNumber"email="email"place="place"schedule="schedule"title="title"category="category"
 ```

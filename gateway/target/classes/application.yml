@@ -21,10 +21,10 @@ spring:
           uri: http://localhost:0
           predicates:
             - Path=/volunteerings/**, /checkVolunteeringApplicationHistories/**
-        - id: 수혜기관
+        - id: association
           uri: http://localhost:0
           predicates:
-            - Path=/associationInfos/**, /봉사활동일정조회/**
+            - Path=/associationInfos/**, /checkSchedules/**
         - id: mypage
           uri: http://localhost:0
           predicates:
@@ -65,8 +65,8 @@ spring:
           uri: http://volunteering:8080
           predicates:
             - Path=/volunteerings/**, 
-        - id: 수혜기관
-          uri: http://수혜기관:8080
+        - id: association
+          uri: http://association:8080
           predicates:
             - Path=/associationInfos/**, 
         - id: mypage
